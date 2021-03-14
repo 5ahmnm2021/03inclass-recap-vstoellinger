@@ -20,7 +20,7 @@ Install Unity, open in Unity Hub.
 /
 
 ### Project state: 
-40% (60% scene switches,Button press ...) 
+60%
 
 ### Limitations: 
 
