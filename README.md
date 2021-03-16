@@ -5,7 +5,7 @@ Vanessa Stoellinger's Project
 Unity Recap 2020/2021
 
 ### Development platform: 
-macOS Big Sur, Visual Studio Mac, Unity 2020.1.5f1
+macOS, Visual Studio Mac, Unity 2020.1.5f1
 
 ### Target platform: 
 WebGL
