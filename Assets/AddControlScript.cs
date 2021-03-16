@@ -17,6 +17,9 @@ public class AddControlScript : MonoBehaviour
     public float n1Float;
     public float n2Float;
 
+    private bool num1 = true;
+    private bool num2 = true;
+
     public void Addition()
     {
         try
@@ -24,28 +27,41 @@ public class AddControlScript : MonoBehaviour
             n1Float = float.Parse(n1.text);
             n1.image.color = weiss;
             message.text = "";
+            num1 = true;
         }
 
         catch (System.Exception)
         {
             message.text = "Versuch es mit Nummern!";
             n1.image.color = rot;
+            num1 = false;
         }
 
         try
         {
             n2Float = float.Parse(n2.text);
             n2.image.color = weiss;
+            num2 = true;
         }
 
         catch (System.Exception)
         {
             message.text = "Versuch es mit Nummern!";
             n2.image.color = rot;
+            num2 = false;
         }
 
-        sum.text = (n1Float + n2Float).ToString();
-        Debug.Log("Es kommt raus: " + sum.text);
+
+        if (num1 && num2)
+        {
+            sum.text = (n1Float + n2Float).ToString();
+            Debug.Log("Es kommt raus: " + sum.text);
+        }
+
+        else
+        {
+            sum.text = "/";
+        }
 
     }
 }
