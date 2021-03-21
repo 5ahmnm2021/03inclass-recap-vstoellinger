@@ -5,7 +5,7 @@ Vanessa Stoellinger's Project
 Unity Recap 2020/2021
 
 ### Development platform: 
-macOS, Visual Studio Mac, Unity 2020.1.5f1
+macOS Catalina, Visual Studio Mac, Unity 2020.1.5f1
 
 ### Target platform: 
 WebGL
@@ -14,17 +14,17 @@ WebGL
 /
 
 ### Necessary setup/execution steps: 
-Install Unity, open in Unity Hub.
+Install Unity
 
 ### Third party material: 
 /
 
 ### Project state: 
-60%
+100%
 
 ### Limitations: 
 
 ### Lessons Learned:
-Revision of Unity/C# Basics
+Unity and C# Basics + how to use github
 
 Copyright by vstoellinger :)
