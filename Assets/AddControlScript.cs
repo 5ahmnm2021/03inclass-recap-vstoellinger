@@ -8,11 +8,9 @@ public class AddControlScript : MonoBehaviour
 
     public InputField n1;
     public InputField n2;
+
     public Text sum;
     public Text message;
-
-    public Color rot = Color.red;
-    public Color weiss = Color.white;
 
     public float n1Float;
     public float n2Float;
@@ -22,32 +20,34 @@ public class AddControlScript : MonoBehaviour
 
     public void Addition()
     {
+        string errorMsg = "Versuch es mit Nummern!";
+
         try
         {
             n1Float = float.Parse(n1.text);
-            n1.image.color = weiss;
+            n1.image.color = Color.white;
             message.text = "";
             num1 = true;
         }
 
         catch (System.Exception)
         {
-            message.text = "Versuch es mit Nummern!";
-            n1.image.color = rot;
+            message.text = errorMsg;
+            n1.image.color = Color.red;
             num1 = false;
         }
 
         try
         {
             n2Float = float.Parse(n2.text);
-            n2.image.color = weiss;
+            n2.image.color = Color.white;
             num2 = true;
         }
 
         catch (System.Exception)
         {
-            message.text = "Versuch es mit Nummern!";
-            n2.image.color = rot;
+            message.text = errorMsg;
+            n2.image.color = Color.red;
             num2 = false;
         }
 
@@ -55,7 +55,6 @@ public class AddControlScript : MonoBehaviour
         if (num1 && num2)
         {
             sum.text = (n1Float + n2Float).ToString();
-            Debug.Log("Es kommt raus: " + sum.text);
         }
 
         else

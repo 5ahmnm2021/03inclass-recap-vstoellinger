@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 60633972}
   - component: {fileID: 60633971}
   m_Layer: 5
-  m_Name: Button
+  m_Name: next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 645401215}
   - component: {fileID: 645401214}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Ueberschrift
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,8 +496,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 92.8}
-  m_SizeDelta: {x: 291.7729, y: 78.74109}
+  m_AnchoredPosition: {x: -1, y: 79.6}
+  m_SizeDelta: {x: 378.15942, y: 105.09628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645401214
 MonoBehaviour:
@@ -521,18 +521,20 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Hello Sommersemester 20/21\n\t                vstoe"
+  m_Text: 'Hello Sommersemester 20/21
+
+    vstoe'
 --- !u!222 &645401215
 CanvasRenderer:
   m_ObjectHideFlags: 0
